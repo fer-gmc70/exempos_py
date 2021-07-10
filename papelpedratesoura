@@ -1,3 +1,9 @@
+#### Programa que funciona como o jogo "pedra, papel, tesoura",
+#### onde um usuário joga contra o computador.
+#### A escolha do usuário é fornecida através do comando input(),
+#### enquanto que a do computador é escolhida aleatoriamente.
+#### O programa deve perguntar se o usuário quer jogar novamente.
+
 import random
 opcoes = ['pedra', 'papel', 'tesoura']
 
