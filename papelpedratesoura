@@ -1,0 +1,36 @@
+import random
+opcoes = ['pedra', 'papel', 'tesoura']
+
+resposta = True
+while resposta:
+    jogada_computador = random.choice(opcoes)
+    jogada_usuario = input(
+        "Selecione a opção para jogar:\nOpções\npedra\npapel\ntesoura\n-> ")
+
+    if jogada_usuario == "pedra":
+        if jogada_usuario == jogada_computador:
+            print("Empate!!!")
+        elif jogada_usuario != jogada_computador and jogada_computador == 'tesoura':
+            print("Usuário Ganhou!!!")
+        else:
+            print("Computador Ganhou!!!")
+
+    if jogada_usuario == "papel":
+        if jogada_usuario == jogada_computador:
+            print("Empate!!!")
+        elif jogada_usuario != jogada_computador and jogada_computador == 'pedra':
+            print("Usuário Ganhou!!!")
+        else:
+            print("Computador Ganhou!!!")
+
+    if jogada_usuario == "tesoura":
+        if jogada_usuario == jogada_computador:
+            print("Empate!!!")
+        elif jogada_usuario != jogada_computador and jogada_computador == 'papel':
+            print("Usuário Ganhou!!!")
+        else:
+            print("Computador Ganhou!!!")
+
+    resposta = input("Você quer jogar novamente (S/N): ")
+    if resposta == "N":
+        resposta = False
