@@ -1,0 +1,22 @@
+# Programa que peça para o usuário digitar 10 números positivos.
+# Retire da lista todos os números que não forem divisíveis por 2 ou 5
+# e exiba a lista final para o usuário
+
+nros_positivos = []
+qtdeNumeros = True
+
+
+while qtdeNumeros:
+    nroLista = (float(input("Digite um número: ")))
+    if nroLista < 0:
+        print("Número invalido!!!")
+    else:
+        nros_positivos.append(nroLista)
+        if len(nros_positivos) == 10:
+            qtdeNumeros = False
+
+for nros in nros_positivos:
+    if not(nros % 2 == 0) and not(nros % 5 == 0):
+        nros_positivos.remove(nros)
+
+print(f"\nLista Final: {nros_positivos}")
